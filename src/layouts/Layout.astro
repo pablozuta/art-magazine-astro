@@ -1,0 +1,36 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: 'Share Tech Mono', monospace;
+		background-color: pink;
+	}
+	code {
+		font-family:Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>
