@@ -12,6 +12,17 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!--importamos las fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--Poppins-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200&family=Roboto:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+  <!--Cormorant Garamond-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200&family=Roboto:ital,wght@1,300&display=swap"
+    rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -20,17 +31,283 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: 'Share Tech Mono', monospace;
-		background-color: pink;
-	}
-	code {
-		font-family:Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+
+.titulo {
+  border: 3px black solid;
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  padding-block: 4rem;
+}
+@media (max-width: 900px) {
+  .titulo {
+    padding-block: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+.titulo > h1 {
+  letter-spacing: 0.8rem;
+  font-weight: 800;
+}
+
+p {
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+.p-text {
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+  margin-inline: 1.5rem;
+}
+
+h3 {
+  font-size: 26px;
+  color: rgb(40, 31, 19);
+  margin-inline: 1.5rem;
+}
+
+.grid-6 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  padding: 5%;
+  gap: 3rem;
+}
+
+.artist__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.horizontal {
+  height: 400px;
+  padding-inline: 1rem;
+  background-color: #eee0b1;
+  display: flex;
+  align-items: center;
+}
+
+/* BECOME A MEMBER BANNER */
+.become-a-member {
+  padding-top: 2rem;
+  background-color: #eee0b1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.become-a-member-texto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  text-align: left;
+  gap: 2rem;
+  flex: 1;
+}
+.become-a-member-imagen {
+  flex: 1;
+}
+.become-a-member-texto > button {
+  width: fit-content;
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+  border: 2px solid #555;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.become-a-member-texto > button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+@media (max-width: 900px) {
+  .become-a-member {
+    flex-direction: column;
+  }
+  .become-a-member-texto {
+    margin-left: 1.5rem;
+  }
+  .become-a-member-imagen > img {
+    margin-top: 2rem;
+    width: 80%;
+  }
+}
+/* TERMINO BECOME A MEMBER BANNER */
+
+/* DOS PARRAFOS DE TEXTO */
+.dos-parrafos {
+  margin-inline: 4rem;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 0.5fr));
+  margin-bottom: 3rem;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .dos-parrafos {
+    margin-inline: 1.3rem;
+  }
+}
+
+.dos-parrafos-texto {
+  line-height: 120%;
+  font-weight: 500;
+  text-align: center;
+  width: auto;
+  margin: auto;
+  text-justify: distribute;
+}
+.ml-2 {
+  width: 98%;
+
+  margin: auto;
+}
+
+/* CAFETERIA STYLES */
+
+.m900 {
+  max-width: 900px;
+  margin-left: 10rem;
+}
+
+.cafeteria-card {
+  max-width: 800px;
+  text-align: left;
+  padding-inline: 2%;
+  margin: auto;
+}
+.h3-cafeteria {
+  margin-left: 0;
+  border-bottom: 1.4px solid #dabc5a;
+}
+
+.cafeteria-card-open {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.grid-4-imagenes-cafeteria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.imagen-4-cafeteria {
+  width: 100%;
+  aspect-ratio: 1/1.5;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .cafeteria-card {
+    margin-left: 0rem;
+    padding-inline: 0.5rem;
+  }
+  .grid-4-imagenes-cafeteria {
+    gap: 0rem;
+  }
+  .imagen-4-cafeteria {
+    margin-top: -0.8rem;
+  }
+}
+
+/* HOVER IMAGENES INDEX PAGE */
+.a_image {
+  transition: all 1s;
+}
+.a_image:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* ABOUT US PAGE */
+.main-about-us {
+  max-width: 800px;
+  text-align: left;
+  padding-inline: 2%;
+  margin: auto;
+}
+.main-about-us > img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-container {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .nav-container ul li {
+    display: inline-flex;
+    list-style: none;
+    padding: 0.6rem;
+  }
+  .nav-container ul li a {
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+    color: black;
+  }
+  .nav-container ul li a:hover {
+    color: coral;
+  }
+
+  
+
+
+footer {
+    margin-block: 0.7rem;
+    background: rgb(244, 244, 244);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footer-item,
+  a {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    margin-block: 0.4rem;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-item > p {
+    text-align: center;
+  }
+  
+  .footer-item a {
+    font-size: 1.3rem;
+  }
+  .footer-item a:hover {
+    color: rgb(205, 101, 63);
+  }
+  
+  .footer-last {
+    text-align: center;
+  }
+
 </style>
