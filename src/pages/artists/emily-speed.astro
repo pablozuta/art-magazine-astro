@@ -1,0 +1,157 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Kontakt Magazine | Emily Speed">
+    <main style="background-color:darkseagreen;padding-block: 3rem;">
+        <div class="container">
+          <div class="left-sidebar">
+              <h2>The Art of Elsewhere</h2>
+              <p>Emily Speed (born 1979, Chester) is an artist based in Liverpool.[1] Her practice spans drawing, sculpture, installation, photography, moving image and performance. It explores the relationship between architecture and the human body. Speed has shown her work at Yorkshire Sculpture Park, Open Eye Gallery (Liverpool) and Tate St Ives, among other places. She has been shortlisted for the Liverpool Art Prize and the Northern Art Prize.
+      </p>
+      <br>
+      <p>  Steve Pantazis: Your work explores the relationship of body and architecture. Why are you attracted to this relationship?
+      </p>
+      <br>
+      <p>Emily Speed: I have always loved buildings, probably because my grandfather was an architect and he was very encouraging of my art-making, but I’m not sure exactly where it stems from. I’m interested in how we occupy our own, complex psychological spaces (we are also spaces) and also in our relationship to built space, especially how buildings shape us as people. Architectonic vocabulary is used in such an interesting way around the body (having a façade, to put up a wall, eyes as windows) and the reverse is also true (buildings can have a skeleton, a heart, ribs, hip roof), then something happens with clothing that seems to span the two as well; in German there is ‘wand’ (wall) and ‘gewand’ (clothing) and I like the meeting of ‘habit’ and ‘inhabit’ in English. I could go on.
+      </p>
+          </div>
+          <div class="right-sidebar">
+              <img src="https://www.thegrundy.org/wp-content/uploads/2017/12/candm6small.jpg" alt="" class="artist__img">
+              <img src="https://www.emilyspeed.co.uk/images/works/Abacus/001.jpg" alt="" class="artist__img">
+              <img src="https://wsworkshop.org/wp-content/uploads/post/emily-speed/jpg/17-20150603-emily-speed-1721-700x465.jpg" alt="" class="artist__img">
+              <img src="https://jerwoodarts.org/app/uploads/2020/04/Emily-Speed-Image-Roger-Sineck.jpg" alt="" class="artist__img">
+          </div>
+        </div>
+      
+        <div class="container" style="background-color:burlywood;padding-top:2rem ;">
+          <div class="left-sidebar">
+            
+              <p>SP: In the ‘Body/Building’ pieces, representing buildings like armour with just two bare legs protruding, there is a strong sense of vulnerability, as the drawings are loosely sitting on fragile stands. What does this signify? Are you interested in exploring the fragile relationship between humans and their surrounding spaces?
+      </p>
+      <br>
+      <p>ES: With the Body/Building works I suppose I was really thinking that building a defence like that, something impenetrable around yourself, is quite debilitating; you become trapped in your own space and then vulnerable because you are weighed down. I am always quite attracted to the hubris of really monumental building and I like the idea of these people with their own special construction – a monument to themselves perhaps (especially as the architecture will certainly outlive their bodies). The small stands serve to highlight how precarious the legs-holding-building are. The drawings also provide a contrast to the Build-Up piece in a way, with these private individuals shown against a small group of people, who are dependent on each other, but can build something much bigger if they work together. Maybe it’s more about the fragility of everything, but especially the relationships between things and how that needs a careful balance.
+      </p>
+          
+      
+          </div>
+          <div class="right-sidebar-2">
+              <img src="https://incertainplaces.org/wp-content/uploads/2018/12/emily_speed_featured.jpg" alt="" class="img_horizontal">
+              <img src="https://i0.wp.com/wsworkshop.org/wp-content/uploads/post/emily-speed/jpg/21-20150603-emily-speed-323-700x465.jpg?resize=750%2C499" alt="" class="img_horizontal">
+                     
+          </div>
+          <div class="left-sidebar">
+           
+           
+      <p>"My interests lies in the relationship between people and buildings and my work explores the body and its relationship to architecture. The idea of shelter and the inhabitant is at the core of much of my work; how a person is shaped by the buildings they have occupied and how a person occupies their own psychological space."
+      </p>
+      <br>
+      <p>"Somewhat, although I think the appearance of my work might be a bit of a red herring there. What I do have in common with them – I don’t agree with war for one, but I wouldn’t say I’m anarchic or overtly political through my work in the Dada sense. I love the use of humour or nonsensical things."
+      </p>
+          </div>
+          <div class="right-sidebar">
+              <img src="https://pbs.twimg.com/profile_images/1196011253086478337/pDKdwkmA_400x400.jpg" alt="" class="artist__img">
+              <img src="https://static.a-n.co.uk/wp-content/uploads/2015/08/unnamed-5-e1439374407896.jpg" alt="" class="artist__img">
+                     
+          </div>
+        </div>
+      </main>
+	
+</Layout>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  margin-inline: 4%;
+}
+h2 {
+  margin-inline: 4%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.artist__img {
+  width: 100%;
+  height: 90%;
+  aspect-ratio: 1/1.3;
+  object-fit: cover;
+}
+.img_horizontal {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+}
+
+.left-sidebar {
+  margin-top: 1rem;
+}
+
+.right-sidebar {
+  grid-column: 2/4;
+  grid-row: 700px;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.right-sidebar-2 {
+  grid-column: 2/4;
+  grid-row: 800px;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .right-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .artist__img {
+    width: 80%;
+    height: 60%;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+  }
+  .img_horizontal {
+    width: 90%;
+    height: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .right-sidebar-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+</style>
