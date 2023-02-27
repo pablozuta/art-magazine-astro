@@ -5,17 +5,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Kontakt Magazine">
 	<body>
 
-		<!--comienzo barra de navegacion-->
-		<nav class="nav-container">
-		  <ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="design.html">DESIGN</a></li>
-			<li><a href="art.html">ART</a></li>
-	  
-		  </ul>
-		</nav>
-	  
-		<!--termino barra de navegacion-->
+		
 	  
 		<header >
 		  <div class="titulo">
@@ -160,6 +150,7 @@ import Layout from '../layouts/Layout.astro';
 			<h2>Become a Member</h2>
 			<p>A membership helps us stay independent, create a whole range of stories across our different platforms, and
 			  continue to invest in the creative community we work with</p>
+			  <input type="text" placeholder="Enter your email" style="max-width: 18rem; padding:0.2rem;">
 			<button>Join the club</button>
 		  </div>
 		  <div class="become-a-member-imagen">
@@ -168,24 +159,7 @@ import Layout from '../layouts/Layout.astro';
 	  
 		</div>
 		<hr>
-		<footer>
-	  
-		  <div class="footer-item">
-			<p style="font-weight:600 ;">Education</p>
-			<a href="teachers.html">Teachers</a>
-			<a href="tours.html">Tours</a>
-		  </div>
-		  <div class="footer-item">
-			<p style="font-weight:600 ;">Visit</p>
-			<a href="cafeteria.html">Caffeteria</a>
-			<a href="warehouse.html">WareHouse</a>
-		  </div>
-		  <div class="footer-item">
-			<p style="font-weight:600 ;">Foundation</p>
-			<a href="about-us.html">About Us</a>
-			<a href="support.html">Support</a>
-		  </div>
-		</footer>
+		
 		<hr>
 	  
 	  
@@ -193,47 +167,4 @@ import Layout from '../layouts/Layout.astro';
 	  </body>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+
