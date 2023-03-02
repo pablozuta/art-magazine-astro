@@ -118,7 +118,8 @@ import Layout from '../layouts/Layout.astro'
           <a
             href='https://victoryjournal.com/'
             target='_blank'
-            type='noreferrer'>VICTORY JOURNAL</a>
+            type='noreferrer'>VICTORY JOURNAL</a
+          >
         </h4><br />
 
         <p>
@@ -234,3 +235,16 @@ import Layout from '../layouts/Layout.astro'
 
   <hr />
 </Layout>
+
+<style>
+  input[type='text'] {
+    background-color: whitesmoke;
+    border: 2px solid #5555;
+    border-radius: 4px;
+    padding-inline: 0.3rem;
+    outline: none;
+  }
+  input[type='text']:focus {
+    border: 2px solid coral;
+  }
+</style>
