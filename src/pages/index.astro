@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Kontakt Magazine'>
@@ -14,7 +14,7 @@ import Layout from '../layouts/Layout.astro'
     </center>
   </header>
 
-  <div class='container' style='margin-top: -3rem;'>
+  <main class='container' style='margin-top: -3rem;'>
     <div class='grid-6'>
       <div class='card'>
         <img
@@ -22,7 +22,9 @@ import Layout from '../layouts/Layout.astro'
           class='artist__img a_image'
           alt='imagen of lucy Mckenzie'
         />
-        <h4><a href='/artists/lucy-mckenzie/'> LUCY McKENZIE</a></h4><br />
+        <a href='/artists/lucy-mckenzie/' class='link-principal'>
+          LUCY McKENZIE</a
+        ><br />
 
         <p>
           McKenzie collaborates with other creatives regularly. Through her
@@ -37,7 +39,9 @@ import Layout from '../layouts/Layout.astro'
           class='artist__img a_image'
           alt='Zahoor ul Akhlaq painting'
         />
-        <h4><a href='/artists/zahoor-ul-akhlaq/'>ZAHOOR UL AKHLAQ</a></h4><br />
+        <a href='/artists/zahoor-ul-akhlaq/' class='link-principal'
+          >ZAHOOR UL AKHLAQ</a
+        ><br />
 
         <p>
           Zahoor ul Akhlaq was a pioneering artist from Pakistan. He is known
@@ -53,7 +57,8 @@ import Layout from '../layouts/Layout.astro'
           alt='art installation emily speed'
         />
 
-        <h4><a href='/artists/emily-speed/'>EMILY SPEED</a></h4><br />
+        <a href='/artists/emily-speed/' class='link-principal'>EMILY SPEED</a
+        ><br />
 
         <p>
           Experience a new film installation by North West based artist Emily
@@ -69,11 +74,14 @@ import Layout from '../layouts/Layout.astro'
           class='artist__img a_image'
           alt='storied magazine cover'
         />
-        <h4>
-          <a href='https://storiedmag.com/' target='_blank' type='noreferrer'
-            >STORIED</a
-          >
-        </h4><br />
+
+        <a
+          href='https://storiedmag.com/'
+          class='link-principal'
+          target='_blank'
+          type='noreferrer'>STORIED</a
+        >
+        <br />
 
         <p>
           As an independent magazine/journal and online platform, STORIED
@@ -91,13 +99,14 @@ import Layout from '../layouts/Layout.astro'
           class='artist__img a_image'
           alt='interior house table'
         />
-        <h4>
+        
           <a
             href='https://berlinquarterly.com/'
+            class='link-principal'
             target='_blank'
             type='noreferrer'>BERLIN QUARTERLY</a
           >
-        </h4><br />
+        <br />
 
         <p>
           BERLIN QUARTERLY is a European review of long form journalism,
@@ -114,13 +123,14 @@ import Layout from '../layouts/Layout.astro'
           alt='victory journal magazine cover'
         />
 
-        <h4>
+        
           <a
             href='https://victoryjournal.com/'
+            class="link-principal"
             target='_blank'
             type='noreferrer'>VICTORY JOURNAL</a
           >
-        </h4><br />
+        <br />
 
         <p>
           Victory Journal is a print and digital publication devoted to the
@@ -131,11 +141,11 @@ import Layout from '../layouts/Layout.astro'
       </div>
     </div>
     <!--fin grid-6-->
-  </div>
+  </main>
 
   <!--comienza el banner horizontal-->
   <div class='horizontal'>
-    <div>
+    <div style="max-width: 1366px; margin-inline:auto;">
       <h3>
         Nomad is located in Munich, north of the Alps at the heart of Europe—a
         city that offers a high quality of life, home to a lively start-up
@@ -147,7 +157,7 @@ import Layout from '../layouts/Layout.astro'
 
   <br />
 
-  <div class='grid-6'>
+  <div class='grid-6' style="max-width: 1366px; margin-inline:auto;">
     <div class='card'>
       <p>
         The light drew Hans Hartung and Eva Bergman to France’s Côte d’Azur. To
@@ -187,7 +197,7 @@ import Layout from '../layouts/Layout.astro'
 
   <!--comienza el banner horizontal-->
   <div style='background-color: #CB9558;' class='horizontal'>
-    <div>
+    <div style="max-width: 1366px; margin-inline:auto;">
       <h3>
         A graphic representation of data abstracted from the banks of every
         computer in the coffin for Armitage’s call. Images formed and reformed:
@@ -198,8 +208,7 @@ import Layout from '../layouts/Layout.astro'
   <!--termino del banner horizontal-->
   <br />
 
-  <div class='grid-6'>
-
+  <div class='grid-6' style="max-width: 1366px; margin-inline:auto;">
     <!-- empieza grid 6 texto -->
     <div class='card'>
       <div class='card'>
@@ -211,18 +220,24 @@ import Layout from '../layouts/Layout.astro'
       </div>
     </div>
 
-
     <div class='card'>
       <p>
-        Bergman endured the struggles of a woman artist in her time. “She did not receive much recognition,” Schlesser says of Hartung’s wife. 
-        Their home leaves traces of their story. The swimming pool suggests Hartung’s love of fitness; it also suggests a remedy to his lack of exercise after losing one of his legs fighting with the French foreign legion.
+        Bergman endured the struggles of a woman artist in her time. “She did
+        not receive much recognition,” Schlesser says of Hartung’s wife. Their
+        home leaves traces of their story. The swimming pool suggests Hartung’s
+        love of fitness; it also suggests a remedy to his lack of exercise after
+        losing one of his legs fighting with the French foreign legion.
       </p>
     </div>
 
     <div class='card'>
       <p>
-        Hartung and Bergman’s separate studios suggest different methods: while Hartung worked often under a neon glow through the night, Bergman preferred daylight. And the fact of the house’s existence is an ode to the pair’s final coming together.
-        She would photograph the landscape of the region and reduce it to its basic forms in painterly compositions, a technique her husband shared.
+        Hartung and Bergman’s separate studios suggest different methods: while
+        Hartung worked often under a neon glow through the night, Bergman
+        preferred daylight. And the fact of the house’s existence is an ode to
+        the pair’s final coming together. She would photograph the landscape of
+        the region and reduce it to its basic forms in painterly compositions, a
+        technique her husband shared.
       </p>
     </div>
 
@@ -236,17 +251,24 @@ import Layout from '../layouts/Layout.astro'
       </div>
     </div>
 
-
     <div class='card'>
       <p>
-        The two painters were married young but divorced in 1939, due to health complications and the War. They drew up plans for the home jointly, finally tasking an architect to execute them after they reunited and remarried in 1957.
-        In her paintings, a rock becomes a circle, a crevice a parabola, a cliff face a square.
+        The two painters were married young but divorced in 1939, due to health
+        complications and the War. They drew up plans for the home jointly,
+        finally tasking an architect to execute them after they reunited and
+        remarried in 1957. In her paintings, a rock becomes a circle, a crevice
+        a parabola, a cliff face a square.
       </p>
     </div>
 
     <div class='card'>
       <p>
-        But understanding how the couple lived requires some guesswork. There are gaps in our knowledge. We can imagine them peering out at the sea; diving into the pool; working restlessly from their studios. The foundation encourages this. But still the outline is slight, a ghost of their lives. It is for us to interpret. This makes it richer. It is as if we are looking at a landscape, but see only a faint blur.
+        But understanding how the couple lived requires some guesswork. There
+        are gaps in our knowledge. We can imagine them peering out at the sea;
+        diving into the pool; working restlessly from their studios. The
+        foundation encourages this. But still the outline is slight, a ghost of
+        their lives. It is for us to interpret. This makes it richer. It is as
+        if we are looking at a landscape, but see only a faint blur.
       </p>
     </div>
   </div><!--fin grid-6-->
@@ -282,6 +304,20 @@ import Layout from '../layouts/Layout.astro'
 </Layout>
 
 <style>
+  main {
+    max-width: 1366px;
+    margin-inline: auto;
+  }
+  .link-principal {
+    list-style: none;
+    font-size: 1.5rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.7s ease-in-out;
+  }
+
+  .link-principal:hover {
+    border-bottom: 2px solid #dabc5a;
+  }
   input[type='text'] {
     background-color: whitesmoke;
     border: 2px solid #5555;
