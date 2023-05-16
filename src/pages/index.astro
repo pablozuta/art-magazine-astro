@@ -156,6 +156,10 @@ import Layout from '../layouts/Layout.astro';
 
   <div class='grid-6' style='max-width: 1366px; margin-inline:auto;'>
     <div class='card'>
+      <p class="gray-text"><em>ARCHITECTURE</em></p>
+      <h3>Drawn by Light</h3>
+      <p class="gray-text mb-3"><em>HARTUNG BERGMAN FOUNDATION</em></p>
+
       <p>
         The light drew Hans Hartung and Eva Bergman to France’s Côte d’Azur. To
         understand it, go to their former home in Antibes, a white modernist
@@ -182,7 +186,7 @@ import Layout from '../layouts/Layout.astro';
     <div class='card'>
       <img
         class='artist__img a_image'
-        src='https://readcereal.com/wp-content/uploads/2022/08/HARTUNGBERGMAN_01_final2-800x540.jpg'
+        src='https://readcereal.com/wp-content/uploads/2022/08/HARTUNGBERGMAN_02_final-696x928.jpg'
         alt='hartung house'
       />
     </div>
@@ -307,13 +311,26 @@ import Layout from '../layouts/Layout.astro';
   }
   .link-principal {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-inline: auto;
     border-bottom: 2px solid transparent;
     transition: border-color 0.7s ease-in-out;
   }
 
   .link-principal:hover {
     border-bottom: 2px solid #dabc5a;
+    }
+
+  .link-principal:hover img {
+    opacity: 0.5;
+  }
+  .gray-text {
+    color: grey;
+    font-size: 0.9rem;
+  }
+
+  .mb-3{
+    margin-bottom: 1rem;
   }
 
   
