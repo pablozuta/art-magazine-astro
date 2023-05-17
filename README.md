@@ -7,4 +7,5 @@ In addition to showcasing stunning works of art, our magazine also features inte
 
 ## Technologies Used
 - [Astro](https://astro.build/) 
+- [Cloudinary](https://cloudinary.com/)
 - [Vercel](https://vercel.com/) 
